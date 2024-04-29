@@ -17,7 +17,7 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>Krystin Gonzales</strong> Sample Works</a>
+									<a href="index.html" class="logo"><strong>Krystin Gonzales</strong> Key Features </a>
 									<ul class="icons">
 										<li>
 											<a href="https://github.com/Gonzales-K" class="icon brands fa-github">
@@ -44,29 +44,76 @@
 								</header>
 								<section id="banner">
 									<div class="content">
-										
-										
 										<h3>The Log-in Page</h3>
-										<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
+										<p>
+											The landing page when one visits this site is the log-in page. 
+											This application utilizes responsive design techniques to dynamically render 
+											to fit the viewport of the device being used.
+											<br/>
+											<br>
+											The <strong>navigation bar</strong> conditionally renders based on if there is a valid authentication token. 
+											If there is no token, the user is only presented with links to the pages we allow anyone to view.
+											This allows us to use one navigation bar element for all pages of the application.
+											<br/>
+											<br>
+											The <strong>Log-in</strong> element renders as a card centered on the screen. 
+											It has input fields for username and password as well as a button 
+											for submitting the credentials and a link to create a new account.
+											The password input field is obscured for security purposes.
+											Upon submission, the application sends a request to the server to authenticate the user. 
+											If authentication fails the user is prompted to try again or create an account. If successful,
+											they are redirected to the games page.
+											<br/>
+											<br>The <strong>create account</strong> link routes the user to the registration page.</br>
+										</p>
 									</div>
-									<span class="image object">
+									<span class="image">
 										<img src="images/gameNightLogin.png" alt="" />
 									</span>
 								</section>
 
 								<section id="banner">
-									<span class="image">
+									<span class="image left">
 										<img src="images/gameNightSignUp.png" alt="" />
 									</span>
-									<div class="content align-right">
-										<h3>The Registration Page</h3>
-										<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
+									<div class="content align-left">
+										<h3 class=" align-right">The Registration Page</h3>
+										<p>
+											The registration page is a form that allows users to create an account. 
+											There are input fields for various data-types. 
+											<br/>
+											<br>
+											The <strong>password</strong> input field is obscured for security purposes.
+											Upon submission, using the create account button, the program will validate all data. 
+											If all data meets requirements, the password will be encrypted and the hashed password 
+											will be stored in the database.
+											The user will then be routed to the games page.
+											<br/>
+											<br/>
+											The <strong>location</strong> field pulls all locations from the database and allows the user to select one.
+											If the user&apos;s location is not in the database, there is an <strong>Add Location button</strong> 
+											that will bring up a modular form to create a new location. This will add to the database and 
+											add it to the dropdown location options.
+										</p>
 									</div>
 								</section>
+
 								<section id="banner">
 									<div class="content align-left">
 										<h3>The Games Page</h3>
-										<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
+										<p> The games page will display all games in the database. The functionality of this page is similar to the 
+											my games, events, and my events pages with the exception that the events page displays events rather than games
+											and the my games/events pages only display what the user has either created or subscribed to.
+											<br/>
+											<br>
+											Each game is displayed as a card within a <strong>flexbox</strong>. As games are added to the database they will be displayed dynamically
+											adding rows as needed and displaying up to three columns. <br>
+											Each card is comprised of an image, title, a button for viewing game details and a dropdown to add it to the user&apos;s favorites or watch lists.
+											<br/>
+											<br>
+											The <strong>search bar</strong> will filter the games displayed based on title. <br> 
+
+										</p>
 									</div>
 									<span class="image">
 										<img src="images/gameNightGames.png" alt="" />

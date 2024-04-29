@@ -1224,26 +1224,27 @@ input[type="radio"] + label:before {
     max-width: 40%; }
     .image.left img, .image.right img {
       width: 100%; }
-  .image.left {
-    float: left;
-    padding: 0 1.5em 1em 0;
-    top: 0.25em; }
-  .image.right {
-    float: right;
-    padding: 0 0 1em 1.5em;
-    top: 0.25em; }
-  .image.fit {
-    display: block;
-    margin: 0 0 2em 0;
-    width: 100%; }
-    .image.fit img {
-      width: 100%; }
-  .image.main {
-    display: block;
-    margin: 0 0 3em 0;
-    width: 100%; }
-    .image.main img {
-      width: 100%; }
+      .image.left {
+        float: left;
+        padding: 0 1.5em 1em 0;
+        top: 0.25em; }
+      .image.right {
+        float: right;
+        padding: 0 0 1em 1.5em;
+        top: 0.25em; }
+      .image.fit {
+        display: block;
+        margin: 0 0 2em 0;
+        width: 100%; }
+        .image.fit img {
+          width: 100%;
+        }
+      .image.main {
+        display: block;
+        margin: 0 0 3em 0;
+        width: 100%; }
+        .image.main img {
+          width: 100%; }
 
 a.image {
   overflow: hidden; }
@@ -1774,7 +1775,11 @@ button,
       margin: 0 0 2em 0; }
       .posts article .image img {
         display: block;
-        width: 100%; }
+        width: 100%;
+        height: 15em; 
+        object-fit: contain;
+        background-color: grey; }
+
   @media screen and (min-width: 1681px) {
     .posts article:nth-child(3n + 1):before {
       display: none; }
@@ -2145,15 +2150,32 @@ button,
     width: 30%; }
     #banner .image img {
       height: 100%;
-      -moz-object-fit: cover;
-      -webkit-object-fit: cover;
-      -ms-object-fit: cover;
-      object-fit: cover;
+      -moz-object-fit: contain;
+      -webkit-object-fit: contain;
+      -ms-object-fit: contain;
+      object-fit: contain;
       -moz-object-position: center;
       -webkit-object-position: center;
       -ms-object-position: center;
       object-position: center;
-      width: 100%; }
+      width: 100%; 
+      background-color: black; 
+      border-radius: 0.375em;}
+    #banner .left {
+      -moz-flex-grow: 0;
+      -webkit-flex-grow: 0;
+      -ms-flex-grow: 0;
+      flex-grow: 0;
+      -moz-flex-shrink: 0;
+      -webkit-flex-shrink: 0;
+      -ms-flex-shrink: 0;
+      flex-shrink: 0;
+      display: block;
+      margin: 0 4em 2em 0;
+      padding:0;
+      width: 30%; 
+      }
+
   @media screen and (orientation: portrait) {
     #banner {
       -moz-flex-direction: column-reverse;
@@ -2186,9 +2208,11 @@ button,
         max-height: 50vh;
         min-height: 18em;
         width: 100%; } }
+  
   @media screen and (orientation: portrait) and (max-width: 480px) {
     #banner .image {
       max-height: 35vh; } }
+      
 
 /* Footer */
 #footer .copyright {
