@@ -35,31 +35,44 @@
 								</header>
 							<!-- Content -->
 								<header class="align-center">
-									<h1>Car-Car</h1>
+									<h1>Dealership Management</h1>
 									<p>Project Repository: <a href="https://gitlab.com/k.gonzales/dealer_management">Click here</a></p>
 								</header>
 								<section id="banner">
 									<div class="content">
 										<h3>The Homepage</h3>
-										<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
+										<p>
+											This is your basic landing page. It features welcome message and image beneath a navigation 
+											bar with several links to the various features of the application. The position and size of 
+											all elements is responsive to the device viewport.
+										</p>
 									</div>
 									<span class="image object">
 										<img src="images/dealer_home.png" alt="" />
 									</span>
 								</section>
 								<section id="banner">
-									<span class="image">
+									<span class="image left">
 										<img src="images/dealer_inv.png" alt="" />
 									</span>
-									<div class="content align-right">
-										<h3>The Inventory Page</h3>
-										<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
+									<div class="content align-left">
+										<h3 class="align-right">The Inventory Page</h3>
+										<p>
+											The inventory page pulls the inventory from the database and displays only stock that does not have a sale record.
+											When a sale record is created, a PUT request is sent to the inventory database to update the &apos;sold&apos; status 
+											to &apos;true&apos;. This update will remove the vehicle from the current inventory display.
+										</p>
 									</div>
 								</section>
 								<section id="banner">
 									<div class="content align-left">
 										<h3>The Create Sale</h3>
-										<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
+										<p>
+											The new sale page contains a form to create a new sale record. The form contains dropdown selections for the current,
+											 unsold, stock as well as for selecting the salesperson. Upon submission all fields will be validated. If the entries 
+											 meet all requirements, a new sale record will be created. The state for each field will then be reset, thereby removing 
+											 the vehicle from newly created sale from the dropdown options
+										</p>
 									</div>
 									<span class="image">
 										<img src="images/dealer_sale.png" alt="" />
@@ -84,7 +97,7 @@
 									<span class="opener">Projects</span>
 									<ul>
                                         <li><a href="./gameNightDetail.html">Game Night</a></li>
-                                        <li><a href="./carCarDetail.html">Car-Car</a></li>
+                                        <li><a href="./dealerManager.html">Dealership Management</a></li>
                                         <li><a href="./crossingMulhollandDetail.html">Crossing Mulholland</a></li>
                                     </ul>
 							</ul>
